@@ -1,9 +1,8 @@
 name: call-reusable-workflow
-on: 
-  workflow_dispatch
+on: workflow_dispatch
 jobs:
   job1:
-    uses: test3/.github/workflows/reusable-workflow.yml@main
+    uses: Vacal4123/test3/.github/workflows/reusable-workflow.yml@main
     with:
       input1: Hello
       input2: World
