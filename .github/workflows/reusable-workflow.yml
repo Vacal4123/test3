@@ -22,3 +22,4 @@ jobs:
     steps:
       - id: step1
         run: echo "result = ${{ inputs.input1 }} ${{ inputs.input2 }}" >> $GITHUB_OUTPUT
+        run: echo "${{ steps.step1.outputs.result }}"
