@@ -21,4 +21,4 @@ jobs:
       output1: ${{ steps.step1.outputs.result }}
     steps:
       - id: step1
-        run: echo "`expr ${{ inputs.input1 }} + ${{ inputs.input2 }}`" >> $GITHUB_OUTPUT
+        run: echo "${{ inputs.input1 }} ${{ inputs.input2 }}" >> $GITHUB_OUTPUT
